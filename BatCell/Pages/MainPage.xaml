@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BatCell.Pages.MainPage"
+             BackgroundColor="Black">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="30">
+            <Label Text="BAT-CELULAR | Principal" TextColor="White" FontSize="24" HorizontalOptions="Center" Margin="0, 20, 0, 40" FontAttributes="Bold" />
+
+            <Frame BackgroundColor="#1A1A1A" CornerRadius="10" Padding="0">
+                <Frame.GestureRecognizers><TapGestureRecognizer Tapped="OnCriminososTapped" /></Frame.GestureRecognizers>
+                <Label Text="CRIMINOSOS" TextColor="#FFC300" FontSize="28" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="100" FontAttributes="Bold" />
+            </Frame>
+
+            <Frame BackgroundColor="#1A1A1A" CornerRadius="10" Padding="0">
+                <Frame.GestureRecognizers><TapGestureRecognizer Tapped="OnAliadosTapped" /></Frame.GestureRecognizers>
+                <Label Text="ALIADOS" TextColor="#42A5F5" FontSize="28" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="100" FontAttributes="Bold" />
+            </Frame>
+
+            <Frame BackgroundColor="#1A1A1A" CornerRadius="10" Padding="0">
+                <Frame.GestureRecognizers><TapGestureRecognizer Tapped="OnEquipamentosTapped" /></Frame.GestureRecognizers>
+                <Label Text="EQUIPAMENTOS" TextColor="#CCCCCC" FontSize="28" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="100" FontAttributes="Bold" />
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
